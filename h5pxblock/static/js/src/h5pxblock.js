@@ -34,7 +34,9 @@ function H5PPlayerXBlock(runtime, element, args) {
           ajax: {
             contentUserDataUrl: contentUserDataUrl,
           },
-          credentials: "omit",
+          assetsRequestFetchOptions: {
+            credentials: "omit",
+          },
         };
 
         try {
